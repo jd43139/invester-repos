@@ -1,3 +1,40 @@
+body{
+    margin: 0;
+}
+
+#container{
+   display: none;
+}
+.game-space{
+    display: flex;
+    flex-direction: column;
+}
+.status-bar{
+    background-color: #111739;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+
+}
+.buttons{
+    display: flex;
+    
+    justify-content: center;
+
+}
+.buttons button{
+    padding: 8px 16px;
+    flex-grow: 1;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
 #container{
     background: #0A7792;
     border: 5px solid;
@@ -11,66 +48,10 @@
 
 
 }
-#buyBtn{
-    background: #31A825;
-    position: fixed;
-    left: 165px;
-    top: 40px;
-    border: 2px solid;
-    border-radius: 20%;
-    font-weight: bold;	
-    font-size: 20px;
-    transition: 0.1s;
-    
-    
-    margin: auto;
-}
-#buyBtn:hover{
-    background:#1E850A;
-}
-#buyBtn:active{
-    font-size: 15px;
-}
-
-.sellBtn{
-    background: #D95514;
-    position: fixed;
-    left: 105px;
-    top: 40px;
-    
-    border: 2px solid;
-    border-radius: 20%;
-    font-weight: bold;	
-    font-size: 20px;
-    transition: 0.1s;
-
-    
-    margin: auto;
 
 
-}
-.sellBtn:hover{
-    background:#D8320B ;
-}
-.sellBtn:active{
-    font-size: 15px;
-}
 
-/*#extendTime{
-    position:absolute;
-    left: 200px;
-    top: 120px;
-    background: #CFD11B;
-    font-size: 15px;
-    transition: 0.1s;
 
-}
-#extendTime:hover{
-    background: #C9BE06;
-}
-#extendTime:active{
-    font-size: 12.5px;
-}*/
 #extendTime{
     position: absolute;
     font-size: 15px;
@@ -236,11 +217,12 @@ li{
 
 }
 
-#content{
+/*#content{
     position: relative;
     bottom: 340px;
     right: 120px;
-}
+}*/
+
 #factoryPrice{
     
     font-weight:  bold;
@@ -338,12 +320,12 @@ li{
     top: 30px;
     left: 20px;
 }
-#quantity{
+/*#quantity{
     position: relative;
     left: 140px;
     font-weight: bold;
     
-}
+}*/
 #setting{
     border: 2px solid;
     width: 105px;

@@ -8,8 +8,30 @@
 	<title>Document</title>
 </head>
 <body style="background: #4C4B4B;">
+    <div class="game-space">
+
+    
 	
-	
+        <div class="status-bar">
+            
+            <ul>
+                <li id="balance" class="balance">
+                    Balance
+                </li>
+                <li id="Property" class="property">
+                    Property
+                </li>
+                <li id="propertyPrice" class=property-price></li>
+                <li id="countdown" class="countdown"></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button id="buyBtn" onclick="buy()">Buy</button>
+            <button id="sell" onclick="sell()">Sell</button>
+        </div>
+    </div>
+
 	
 	
 
@@ -60,14 +82,13 @@
 		<button id="extendTime" onclick="extend()">Extend time</button>
 		<input onclick="show_hideBr()" id="HideBR" type="button"  style="color:#0A8A13; ">
 
-		<button id="buyBtn" id="buy"  onclick="buy()">buy</button>
-		<button class="sellBtn"  id="sell"  onclick="sell()">sell</button>
+		
 		<div  class="txt" id="data_container" style=" color:#43F850;">
 			<p id="alert">Time extended 20s</p>
-			<p id="balance"></p>
+			<!--p id="balance"></p>
 			<p id="property"></p>
 			<p id="propertyPrice"></p>
-			<p id="countdown"></p>
+			<p id="countdown"></p!-->
 			<p id="recieved">+$8</p>
 			<p id="loser">you lost</p>
 
@@ -108,9 +129,9 @@
 	</div-->
 	
 	
-	<p id="balance"></p>
+	<!--p id="balance"></p>
 	<p id="property"></p>
-	<p id="propertyPrice"></p>
+	<p id="propertyPrice"></p-->
 	<p id="outlay"></p>
 	<p id="revenue"></p>
 	<p id="profit"></p>
@@ -393,7 +414,7 @@ var countit=(countdown)*(1000/500)
 
 
 
-document.getElementById("sell").style.display="none"
+
 gameFact=document.getElementById('fact')
 gameFact.style.display="none"
 
@@ -415,7 +436,6 @@ function buy(){
 	let top=[]
 	
 	//buys+=1
-	document.getElementById("sell").style.display="block"
 	if (balance<=propertyPrice &&!(countdown<=0)){
 		console.log("not enaugh")
 
